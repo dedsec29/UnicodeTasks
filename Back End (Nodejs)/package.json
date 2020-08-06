@@ -1,0 +1,19 @@
+{
+  "name": "unicode-tasks",
+  "version": "1.0.0",
+  "description": "",
+  "main": "task1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async-middleware": "^1.2.1",
+    "axios": "^0.19.2",
+    "express": "^4.17.1",
+    "node-fetch": "^2.6.0",
+    "utils": "^0.3.1"
+  }
+}
