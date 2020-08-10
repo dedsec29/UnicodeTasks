@@ -1,0 +1,15 @@
+<h1>Results:</h1>
+<ol>
+<%	for (var i of student) { %>
+		<li>
+			<ul>
+				<li>Student Name: <%= i.name %></li>
+				<li>Marks scored in Maths: <%= i.englishMarks %></li>
+				<li>Maths scored in English: <%= i.mathMarks %></li>
+			</ul>
+		</li>
+<%	} %>
+</ol>
+
+<br>
+<button onclick="window.location.href='/';">Submit another response</button>
