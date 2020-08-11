@@ -3,7 +3,7 @@ const app = express();
 const bodyParser= require('body-parser');
 const path = require('path');
 
-app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: false })); //The urlencoded method within body-parser tells body-parser to extract data from the <form> element and add them to the body property in the request object.
 app.use(bodyParser.json()); //attaching body parser to all points
 
 app.set('views', path.join(__dirname, 'views'));  //view folder
