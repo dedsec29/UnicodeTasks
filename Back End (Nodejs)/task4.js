@@ -16,8 +16,8 @@ function comp(x,y) {
 
 const connectionString = 'mongodb+srv://Parth:tiger@cluster0.am17u.mongodb.net/Parth?retryWrites=true&w=majority';
 
-MongoClient.connect(connectionString, {useUnifiedTopology: true})
-.then( client=> {
+MongoClient.connect(connectionString, {useUnifiedTopology: true}) //Make sure to whitelist your IP address first
+.then( client=> { // with which you're accessing the database
 	console.log('Connected to database!');
 	const db=client.db('classroom'); //database name
 	const classStudents=db.collection('class-students'); //collection name // {name: , englishMarks: , mathMarks: }
